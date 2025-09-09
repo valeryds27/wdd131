@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD 131</title>
+        <title>WDD 131-Dynamix Web Fundamentals-Your Name</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Valery Dahua; learning HTML, CSS and JavaScript">
+        <meta name="author" content="Valery Dahua">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <script defer src="scripts/getdates.js"></script>
     </head>
     <body>
-        <h1>WDD 131 | DAHUA</h1>
+        <header>
+            <span id="course-title">WDD 131-Dynamic Web Fundamentals</span>
+            <nav>
+                <a href="https://pe.linkedin.com">LinkedIn</a>
+                <a href="https://byupw.instructure.com/">Canvas</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+                <a href="finalproject/index.html">Final Project</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Valery Dahua</h1>
+            <section class="card-1">
+                <h2>About Me</h2>
+                <img src="images/profile.jpg" alt="my profile picture">
+                <p>My name is Valery. I was born in Iquitos, Peru and live with my family here. I am currently both practicing in a laboratory of epidemiology and studying Software Development at BYU-Idaho through the BYU-Pathway program. I love to travel and take photos of nature</p>
+                <h2>Iquitos, Peru</h2>
+                <figure>
+                    <img src="images/peruflag.png" alt="Peru Flag">
+                    <figcaption>Official Flag of Peru</figcaption>
+                </figure>
+                <p>Iquitos is the largest city in the world that doesn't have road access. It's a beautiful city in the peruvian Amazon</p>
+            </section>
+            <section class="card-2">
+                <h2>Web Dev Resources</h2>
+                <a href="Dev.html">Dev.to Community</a>
+                <a href="smashing.html">Smashing Magazine</a>
+                <a href="css-tricks.html">CSS Tricks</a>
+                <a href="w3schools.html">W3 Schools</a>
+                <a href="udemy.html">Udemy</a>
+                <a href="image.html">Image Placeholder</a>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentyear"></span>Valery Dahua</p>
+            <p id="lastModified"></p>
+        </footer>
     </body>
 </html>
