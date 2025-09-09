@@ -39,13 +39,14 @@ nav a{
     font-family: var(--heading-font);
 }
 
-nav :hover {
+nav a:hover {
     color: var(--primary-color);
     font-weight: bold;
 }
 
 main {
-    width: auto;
+    width: 100%;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 30px 1fr;
