@@ -8,7 +8,7 @@
     font-family: var(--headfont);
     }
 
-    header p{
+    header h1{
     padding-left: 1.2rem;
     padding-top: 1.2rem;
     }
@@ -45,7 +45,7 @@
         display: grid;
         grid-template-rows: auto auto;
     }
-    main h1 {
+    main h2 {
         grid-row: 1;
         grid-column: 1;
         text-align: center;
