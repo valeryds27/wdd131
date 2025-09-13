@@ -1,0 +1,73 @@
+:root {
+    --primarycolor: #1a2424;
+    --secondarycolor: #77878b;
+    --accent1_color: #224d50;
+    --accent2_color: #b7d5d4;
+    --headfont: 'Archivo Black', sans-serif;
+    --bodyfont: 'Karla', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--accent1_color);
+    color: white;
+    font-family: var(--headfont);
+}
+
+header p{
+    padding-left: 1.2rem;
+    padding-top: 8px;
+}
+
+#hamburger-btn {
+  display: inline-block;
+  margin-left: 60px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color:white;
+}
+
+nav a {
+    display: none; 
+    width: 100%;
+    padding: 1rem;
+    border-top: 1px solid var(--accent2_color);
+}
+
+nav.open a {
+    display: block; 
+    text-decoration: none;
+    color: white;
+    padding: 1.2rem;
+    font-family: var(--bodyfont);
+    font-weight: bold;
+}
+
+main {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.temples {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+footer {
+    background-color: var(--secondarycolor);
+    text-align: center;
+    font-family: var(--bodyfont);
+    padding: 10px;
+}
+
