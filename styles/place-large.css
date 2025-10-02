@@ -47,13 +47,10 @@
     }
     
 
-    .weather h2::after {
-        content: " 🌤️";
-        margin-left: 8px;
-        font-size: 1.2em;
-        vertical-align: middle;
+    .emoji {
+        display: inline;
     }
-
+    
     .icon {
         display:none;
     }
