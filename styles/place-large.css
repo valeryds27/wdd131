@@ -4,12 +4,22 @@
         box-sizing: border-box;
     }
 
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
     header {
         width: 100%;
         margin: 0;
         padding: 0;
     }
 
+    main {
+        flex:1;
+        min-height: 100vh;
+        height: auto;
+    }
 
     .hero {
         position: absolute;
@@ -55,11 +65,5 @@
     .icon {
         display:none;
     }
-
-    footer {
-        position: relative;
-        margin-top: 280px;
-    }
-
 
 }
