@@ -82,7 +82,6 @@ span {
 footer {
     padding: 1rem;
     background-color: var(--accent1-color);
-    color: var(--primary-color);
     font-family: var(--body-font);
     font-weight: bold;
 }
