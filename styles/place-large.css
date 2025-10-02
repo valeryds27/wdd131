@@ -9,9 +9,7 @@
         margin: 0;
         padding: 0;
     }
-    main {
-        position: relative;
-    }
+
 
     .hero {
         position: absolute;
@@ -57,4 +55,11 @@
     .icon {
         display:none;
     }
+
+    footer {
+        position: relative;
+        margin-top: 280px;
+    }
+
+
 }
