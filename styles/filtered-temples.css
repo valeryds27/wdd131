@@ -1,0 +1,86 @@
+:root {
+    --primarycolor: #1a2424;
+    --secondarycolor: #77878b;
+    --accent1_color: #224d50;
+    --accent2_color: #b7d5d4;
+    --headfont: 'Archivo Black', sans-serif;
+    --bodyfont: 'Karla', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    background-color: var(--accent1_color);
+    color: white;
+    font-family: var(--headfont);
+    font-size: .8rem;
+}
+
+header h1{
+    padding-left: 1.2rem;
+    padding-top: 2px;
+}
+
+h2,h3{
+    text-align: center;
+    font-family: var(--headfont);
+}
+
+p{
+    font-family: var(--bodyfont);
+    text-align: center;
+}
+
+#hamburger-btn {
+  display: inline-block;
+  margin-left: 60px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color:white;
+}
+
+nav a {
+    display: none; 
+    width: 100%;
+    padding: 1rem;
+    border-top: 1px solid var(--accent2_color);
+}
+
+nav.open a {
+    display: block; 
+    text-decoration: none;
+    color: white;
+    padding: 1.2rem;
+    font-family: var(--bodyfont);
+    font-weight: bold;
+}
+
+
+.temples {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.temples img {
+    width: 80%; 
+    height: 200px; 
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    }
+
+footer {
+    background-color: var(--secondarycolor);
+    text-align: center;
+    font-family: var(--bodyfont);
+    padding: 10px;
+}
+
