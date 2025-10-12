@@ -1,0 +1,81 @@
+:root {
+    --primary-color: #e09f3e; /*background color of heading and footer*/
+    --secondary-color: #335c67;/*background color of sections in body*/
+    --accent1-color: #ffff;/*accents, paragraphs, h2*/
+    --accent2-color: #333;/*h1 and paragraphs*/
+    --font-heading: 'Archivo Black', sans-serif;/*Headings*/
+    --font-body: 'Karla', sans-serif;/*paragraphs*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    color: var(--accent2-color);
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+#hamburger-btn {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--accent2-color);
+}
+
+nav a {
+    display: none; 
+}
+
+.hero, .map, .president-mission {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+img {
+    padding-top: 10px;
+    width: 100%;
+}
+
+h2 {
+    position: absolute;
+    color: var(--accent1-color);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+
+
+p {
+    font-family: var(--font-body);
+    color: var(--accent2-color);
+    padding: 10px;
+    text-align: justify;
+}
+
+footer{
+    background-color: var(--primary-color);
+    font-family: var(--font-body);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

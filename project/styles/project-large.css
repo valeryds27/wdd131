@@ -1,0 +1,28 @@
+@media screen and (min-width: 500px) {
+
+    #hamburger-btn {
+        display: none;
+    }
+
+    nav {
+        grid-column: 2;
+        display:flex;
+        justify-content: space-evenly;
+    }
+
+    nav a{
+        display: inline-block;
+        text-decoration: none;
+        color: var(--accent2-color);
+        padding: 1.2rem;
+        font-family: var(--font-body);
+        font-weight: bold;
+    }
+
+    .hero, .map, .president-mission {
+        max-width: 1200px;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
