@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me as Missionary - Share</title> <!--This name represents my missionary experience during my service in Huancayo, Peru-->
+    <meta name="description" content="You can share your experience here"> <!--The sithe provdes a hub for sharing places, photos, and insights from my time as a missionary in Huancayo, Peru-->
+    <meta name="author" content="Valery Dahua">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <script src="scripts/siteplan.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>ME AS MISSIONARY</h1>
+        <nav>
+            <button id="hamburger-btn" aria-label="Toggle menu">&#9776;</button>
+            <a href="#" id="Home">Home</a>
+            <a href="#" id="Areas">Areas</a><!--Where do you serve?-->
+            <a href="#" id="Gallery">Gallery</a><!--Do you have photos?-->
+            <a href="#" id="Share">Share</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Do you want to share your experience?</h2>
+        <form class="form">
+            <label>REGISTER HERE</label>
+            <label for="firstName">Name*</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+            <label for="email">E-mail*</label>
+            <input type="email" id="email" name="email" required>
+            <fieldset>
+            <legend>Do you serve in Huancayo, Peru?</legend>
+                <div class="rating">
+                    <label><input type="radio" id="yes" name="yes-no" value="1">Yes</label>
+                    <label><input type="radio" id="no" name="yes-no" value="0">No</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>When do you serve in a mission?</legend>
+                <label>(Check all that apply)</label>
+                <label><input type="checkbox" id="2022" name="years" value="2022">2022</label>
+                <label><input type="checkbox" id="2023" name="years" value="2023">2023</label>
+                <label><input type="checkbox" id="2024" name="years" value="2024">2024</label>
+                <label><input type="checkbox" id="other" name="years" value="other">Others</label>
+            </fieldset>
+            <label for="writtenReview">Write your experience here</label>
+            <textarea id="writtenReview" name="reviewText"></textarea>
+            <input type="submit" value="Share">
+        </form>
+        <p id="lastVisitedPage"></p>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Valery Dahua🍃</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -42,20 +42,38 @@ nav a {
     display: none; 
 }
 
+nav.open a {
+  display: block;
+  text-decoration: none;
+  color: var(--accent2-color);
+  font-family: var(--font-body);
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+nav.open a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1px;
+}
+
 .hero, .map, .president-mission {
-    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
 }
 
 img {
-    padding-top: 10px;
+    padding-top: 4px;
     width: 100%;
 }
+h2{
+    font-family: var(--font-heading);
+    text-align: center;
+    color: var(--secondary-color);
+}
 
-h2 {
-    position: absolute;
+h3 {
     color: var(--accent1-color);
     font-family: var(--font-heading);
     font-size: 1rem;
@@ -65,17 +83,86 @@ h2 {
 }
 
 
-p {
+.hero p, .map p, .president-mission p {
     font-family: var(--font-body);
     color: var(--accent2-color);
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     text-align: justify;
+    margin: 10px 20px 10px 10px;
 }
 
 footer{
     background-color: var(--primary-color);
     font-family: var(--font-body);
-    display: flex;
-    justify-content: center;
+    display: block;
     margin-top: 10px;
+}
+
+footer p{ 
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    background-color: var(--primary-color);
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 1.3rem;
+    font-weight: bold;
+    color: var(--accent2-color);
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    margin-top: 0.3rem;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.3rem;
+}
+
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color:var(--accent1-color);
+    border: none;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #010309;
 }
